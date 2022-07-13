@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/home_navigation"
+    app:startDestination="@id/trang_chu">
+
+    <fragment
+        android:id="@+id/trang_chu"
+        android:name="com.example.project_tra_sua.Home.Trang_chu.trang_chu"
+        android:label="fragment_trang_chu"
+        tools:layout="@layout/fragment_trang_chu" >
+        <action
+            android:id="@+id/action_trang_chu_to_ct_sp"
+            app:destination="@id/ct_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/trang_chu"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_trang_chu_to_danhmuc_sp"
+            app:destination="@id/danhmuc_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/trang_chu"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_trang_chu_to_timkiem2"
+            app:destination="@id/timkiem2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/trang_chu"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/ct_sp"
+        android:name="com.example.project_tra_sua.Home.Trang_chu.ct_sp"
+        android:label="fragment_ct_sp"
+        tools:layout="@layout/fragment_ct_sp" >
+        <action
+            android:id="@+id/action_ct_sp_to_danhmuc_sp"
+            app:destination="@id/danhmuc_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/ct_sp"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_ct_sp_to_trang_chu"
+            app:destination="@id/trang_chu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/ct_sp"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/tai_khoan2"
+        android:name="com.example.project_tra_sua.Home.Tai_khoan.Tai_khoan"
+        android:label="fragment_tai_khoan"
+        tools:layout="@layout/fragment_tai_khoan" >
+        <action
+            android:id="@+id/action_tai_khoan2_to_thong_tin_ca_nhan"
+            app:destination="@id/thong_tin_ca_nhan"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/tai_khoan2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_tai_khoan2_to_donhangdamua"
+            app:destination="@id/donhangdamua"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/tai_khoan2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/gio_hang2"
+        android:name="com.example.project_tra_sua.Home.gio_hang.gio_hang"
+        android:label="fragment_gio_hang"
+        tools:layout="@layout/fragment_gio_hang" >
+        <action
+            android:id="@+id/action_gio_hang2_to_don_hang"
+            app:destination="@id/don_hang"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/gio_hang2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/danhmuc_sp"
+        android:name="com.example.project_tra_sua.Home.Trang_chu.danhmuc_sp"
+        android:label="fragment_danhmuc_sp"
+        tools:layout="@layout/fragment_danhmuc_sp" >
+        <action
+            android:id="@+id/action_danhmuc_sp_to_ct_sp"
+            app:destination="@id/ct_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/danhmuc_sp"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_danhmuc_sp_to_trang_chu"
+            app:destination="@id/trang_chu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/danhmuc_sp"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/timkiem2"
+        android:name="com.example.project_tra_sua.Home.Trang_chu.Timkiem"
+        android:label="fragment_timkiem"
+        tools:layout="@layout/fragment_timkiem" >
+        <action
+            android:id="@+id/action_timkiem2_to_ct_sp"
+            app:destination="@id/ct_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/timkiem2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_timkiem2_to_trang_chu"
+            app:destination="@id/trang_chu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/timkiem2"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/don_hang"
+        android:name="com.example.project_tra_sua.Home.gio_hang.don_hang"
+        android:label="fragment_don_hang"
+        tools:layout="@layout/fragment_don_hang" >
+        <action
+            android:id="@+id/action_don_hang_to_thong_tin_ca_nhan"
+            app:destination="@id/thong_tin_ca_nhan"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/don_hang"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_don_hang_to_gio_hang2"
+            app:destination="@id/gio_hang2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/don_hang"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_don_hang_to_trang_chu"
+            app:destination="@id/trang_chu"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/don_hang"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/thong_tin_ca_nhan"
+        android:name="com.example.project_tra_sua.Home.Tai_khoan.Thong_tin_ca_nhan"
+        android:label="fragment_thong_tin_ca_nhan"
+        tools:layout="@layout/fragment_thong_tin_ca_nhan" >
+        <action
+            android:id="@+id/action_thong_tin_ca_nhan_to_tai_khoan2"
+            app:destination="@id/tai_khoan2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/thong_tin_ca_nhan"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_thong_tin_ca_nhan_to_don_hang"
+            app:destination="@id/don_hang"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/thong_tin_ca_nhan"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/donhangdamua"
+        android:name="com.example.project_tra_sua.Home.Tai_khoan.dondamua.donhangdamua"
+        android:label="fragment_donhangdamua"
+        tools:layout="@layout/fragment_donhangdamua" >
+        <action
+            android:id="@+id/action_donhangdamua_to_ct_sp"
+            app:destination="@id/ct_sp"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/donhangdamua"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_donhangdamua_to_tai_khoan2"
+            app:destination="@id/tai_khoan2"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/donhangdamua"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_house"
+        android:title="Home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#FF5722"
+        />
+    <item
+        android:id="@+id/gio_hang"
+        android:enabled="true"
+        android:icon="@drawable/gio_hang"
+        android:title="Giỏ hàng"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#FF5722"/>
+    <item
+        android:id="@+id/tai_khoan"
+        android:enabled="true"
+        android:icon="@drawable/user1"
+        android:title="Tài khoản"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="#FF5722"/>
+
+</menu>

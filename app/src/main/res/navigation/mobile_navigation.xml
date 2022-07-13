@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splash">
+
+    <fragment
+        android:id="@+id/splash"
+        android:name="com.example.project_tra_sua.log_in.Splash"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splash_to_welcome"
+            app:destination="@id/welcome"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/splash"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dang_ky"
+        android:name="com.example.project_tra_sua.log_in.Dang_ky"
+        android:label="fragment_dang_ky"
+        tools:layout="@layout/fragment_dang_ky" >
+        <action
+            android:id="@+id/action_dang_ky_to_dang_nhap"
+            app:destination="@id/dang_nhap"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/dang_ky"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dang_ky_to_welcome"
+            app:destination="@id/welcome"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/dang_ky"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/dang_nhap"
+        android:name="com.example.project_tra_sua.log_in.Dang_nhap"
+        android:label="fragment_dang_nhap"
+        tools:layout="@layout/fragment_dang_nhap" >
+        <action
+            android:id="@+id/action_dang_nhap_to_dang_ky"
+            app:destination="@id/dang_ky"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/dang_nhap"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_dang_nhap_to_welcome"
+            app:destination="@id/welcome"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/dang_nhap"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/welcome"
+        android:name="com.example.project_tra_sua.log_in.Welcome"
+        android:label="fragment_welcome"
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcome_to_dang_nhap"
+            app:destination="@id/dang_nhap"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/welcome"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_welcome_to_dang_ky"
+            app:destination="@id/dang_ky"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out"
+            app:popUpTo="@id/welcome"
+            app:popUpToInclusive="true" />
+    </fragment>
+</navigation>
